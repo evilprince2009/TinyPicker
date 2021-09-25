@@ -1,4 +1,5 @@
-﻿using MetroFramework.Forms;
+﻿using System.Drawing;
+using MetroFramework.Forms;
 using System.Windows.Forms;
 
 namespace TinyPicker
@@ -14,6 +15,14 @@ namespace TinyPicker
         {
             rgbValues.Enabled = false;
             colorPointer.Enabled = false;
+        }
+
+        private void colorSpectrum_MouseMove(object sender, MouseEventArgs e)
+        {
+            Bitmap pixel = (Bitmap) colorSpectrum.Image;
+            Color color = pixel.GetPixel(e.X, e.Y);
+            colorPointer.BackColor = color;
+            rgbValues.Text = $"R: {color.R} , G: {color.G} , B: {color.B}";
         }
     }
 }

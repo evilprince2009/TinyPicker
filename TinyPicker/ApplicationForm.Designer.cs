@@ -53,6 +53,7 @@
             this.colorSpectrum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.colorSpectrum.TabIndex = 0;
             this.colorSpectrum.TabStop = false;
+            this.colorSpectrum.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorSpectrum_MouseMove);
             // 
             // SelectedColorPropGroup
             // 
@@ -134,6 +135,7 @@
             this.rgbValues.Name = "rgbValues";
             this.rgbValues.Size = new System.Drawing.Size(167, 23);
             this.rgbValues.TabIndex = 4;
+            this.rgbValues.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // colorPointer
             // 
