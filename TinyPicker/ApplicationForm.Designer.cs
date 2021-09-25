@@ -53,6 +53,7 @@
             this.colorSpectrum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.colorSpectrum.TabIndex = 0;
             this.colorSpectrum.TabStop = false;
+            this.colorSpectrum.MouseDown += new System.Windows.Forms.MouseEventHandler(this.colorSpectrum_MouseDown);
             this.colorSpectrum.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorSpectrum_MouseMove);
             // 
             // SelectedColorPropGroup
@@ -86,6 +87,7 @@
             this.bluebox.Name = "bluebox";
             this.bluebox.Size = new System.Drawing.Size(87, 23);
             this.bluebox.TabIndex = 5;
+            this.bluebox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // greenbox
             // 
@@ -93,6 +95,7 @@
             this.greenbox.Name = "greenbox";
             this.greenbox.Size = new System.Drawing.Size(87, 23);
             this.greenbox.TabIndex = 4;
+            this.greenbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // redbox
             // 
@@ -100,6 +103,7 @@
             this.redbox.Name = "redbox";
             this.redbox.Size = new System.Drawing.Size(87, 23);
             this.redbox.TabIndex = 3;
+            this.redbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
