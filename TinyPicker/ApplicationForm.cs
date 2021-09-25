@@ -10,6 +10,10 @@ namespace TinyPicker
             InitializeComponent();
         }
 
-        
+        private void ApplicationForm_Load(object sender, System.EventArgs e)
+        {
+            rgbValues.Enabled = false;
+            colorPointer.Enabled = false;
+        }
     }
 }

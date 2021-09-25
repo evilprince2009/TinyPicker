@@ -157,6 +157,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Tiny Picker";
+            this.Load += new System.EventHandler(this.ApplicationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.colorSpectrum)).EndInit();
             this.SelectedColorPropGroup.ResumeLayout(false);
             this.SelectedColorPropGroup.PerformLayout();
