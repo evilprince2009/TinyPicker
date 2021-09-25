@@ -32,6 +32,7 @@ namespace TinyPicker
             redbox.Text = color.R.ToString();
             greenbox.Text = color.G.ToString();
             bluebox.Text = color.B.ToString();
+            hexbox.Text = $"#{color.R.ToString("X2")}{color.G.ToString("X2")}{color.B.ToString("X2")}";
             selectedColorPreview.BackColor = color;
         }
     }

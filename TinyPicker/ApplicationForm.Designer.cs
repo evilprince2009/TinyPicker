@@ -30,6 +30,8 @@
         {
             this.colorSpectrum = new System.Windows.Forms.PictureBox();
             this.SelectedColorPropGroup = new System.Windows.Forms.GroupBox();
+            this.hexbox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.selectedColorPreview = new System.Windows.Forms.Panel();
             this.bluebox = new System.Windows.Forms.TextBox();
             this.greenbox = new System.Windows.Forms.TextBox();
@@ -58,6 +60,8 @@
             // 
             // SelectedColorPropGroup
             // 
+            this.SelectedColorPropGroup.Controls.Add(this.hexbox);
+            this.SelectedColorPropGroup.Controls.Add(this.label4);
             this.SelectedColorPropGroup.Controls.Add(this.selectedColorPreview);
             this.SelectedColorPropGroup.Controls.Add(this.bluebox);
             this.SelectedColorPropGroup.Controls.Add(this.greenbox);
@@ -68,17 +72,34 @@
             this.SelectedColorPropGroup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SelectedColorPropGroup.Location = new System.Drawing.Point(23, 251);
             this.SelectedColorPropGroup.Name = "SelectedColorPropGroup";
-            this.SelectedColorPropGroup.Size = new System.Drawing.Size(228, 100);
+            this.SelectedColorPropGroup.Size = new System.Drawing.Size(228, 129);
             this.SelectedColorPropGroup.TabIndex = 3;
             this.SelectedColorPropGroup.TabStop = false;
             this.SelectedColorPropGroup.Text = "Selected Color";
+            // 
+            // hexbox
+            // 
+            this.hexbox.Location = new System.Drawing.Point(55, 96);
+            this.hexbox.Name = "hexbox";
+            this.hexbox.Size = new System.Drawing.Size(87, 23);
+            this.hexbox.TabIndex = 8;
+            this.hexbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "HEX :";
             // 
             // selectedColorPreview
             // 
             this.selectedColorPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.selectedColorPreview.Location = new System.Drawing.Point(148, 18);
             this.selectedColorPreview.Name = "selectedColorPreview";
-            this.selectedColorPreview.Size = new System.Drawing.Size(74, 75);
+            this.selectedColorPreview.Size = new System.Drawing.Size(74, 101);
             this.selectedColorPreview.TabIndex = 6;
             // 
             // bluebox
@@ -108,7 +129,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 75);
+            this.label3.Location = new System.Drawing.Point(7, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 15);
             this.label3.TabIndex = 2;
@@ -117,7 +138,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 48);
+            this.label2.Location = new System.Drawing.Point(7, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 15);
             this.label2.TabIndex = 1;
@@ -126,7 +147,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Location = new System.Drawing.Point(7, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 15);
             this.label1.TabIndex = 0;
@@ -153,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 370);
+            this.ClientSize = new System.Drawing.Size(274, 397);
             this.Controls.Add(this.colorPointer);
             this.Controls.Add(this.rgbValues);
             this.Controls.Add(this.SelectedColorPropGroup);
@@ -185,6 +206,8 @@
         private System.Windows.Forms.TextBox bluebox;
         private System.Windows.Forms.TextBox greenbox;
         private System.Windows.Forms.TextBox redbox;
+        private System.Windows.Forms.TextBox hexbox;
+        private System.Windows.Forms.Label label4;
     }
 }
 
