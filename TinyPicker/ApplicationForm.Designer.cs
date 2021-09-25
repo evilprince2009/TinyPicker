@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplicationForm));
             this.colorSpectrum = new System.Windows.Forms.PictureBox();
             this.SelectedColorPropGroup = new System.Windows.Forms.GroupBox();
             this.hexbox = new System.Windows.Forms.TextBox();
@@ -179,6 +180,7 @@
             this.Controls.Add(this.rgbValues);
             this.Controls.Add(this.SelectedColorPropGroup);
             this.Controls.Add(this.colorSpectrum);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ApplicationForm";
             this.Resizable = false;
